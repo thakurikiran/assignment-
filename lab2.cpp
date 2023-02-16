@@ -240,7 +240,7 @@ void uni(){
          if(c[j]==b[i])
            break;
       }
-     if(j==k)t C
+     if(j==k)
      {
        c[k]=b[i];
        k++;

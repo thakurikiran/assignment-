@@ -1,24 +1,19 @@
-#include<stdio.h>
+#include <iostream>
+using namespace std;
 
-int main(){
-    float a;
-    int b;
-    printf("Enter a real number: ");
-    scanf("%f",&a);
-    b=a;
-    if(b==a){
-    printf("The floor value is %d.",b);
-    printf("The ceiling value is %d ",b);
+int main() {
+    int number, reversed = 0;
+
+    cout << "Enter an integer: ";
+    cin >> number;
+
+    while (number != 0) {
+        int digit = number % 10;
+        reversed = reversed * 10 + digit;
+        number /= 10;
     }
-    else if(b<a){
-        
-        printf("The floor value is %d.\n",b);
-        printf("The ceiling value is %d.",b+1);
-    }
-    else{
-        printf("The ceiling value is %d.\n",b);
-        printf("The floor value is %d.",b-1);
-    }
+
+    cout << "Reversed Integer: " << reversed << endl;
+
     return 0;
-
 }

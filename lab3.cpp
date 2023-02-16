@@ -12,7 +12,7 @@ int main(){
 	
 	for(i=0;i<5;i++){
 		printf("Enter the name and age of %d person: \n",i+1);
-		scanf("%s",&p[i].name);
+		scanf("%s",p[i].name);
 	
 		scanf("%d",&p[i].age);
 		
